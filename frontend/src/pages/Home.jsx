@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get('https://mern-blog-platform-ku67.onrender.com');
+        const response = await axios.get('https://blog-platform-5alx.onrender.com/api/posts');
         console.log("API Response:", response.data); 
 
         
