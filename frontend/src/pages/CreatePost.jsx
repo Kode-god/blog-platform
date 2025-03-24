@@ -13,7 +13,7 @@ const CreatePost = () => {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      await axios.post("http://localhost:5000/api/posts", {  // Fixed API endpoint
+      await axios.post("https://mern-blog-platform-ku67.onrender.com", {  // Fixed API endpoint
         title,
         content,
         tags: tags.split(',').map(tag => tag.trim()),
