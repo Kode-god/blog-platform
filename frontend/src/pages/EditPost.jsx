@@ -14,7 +14,7 @@ const EditPost = () => {
     const fetchPost = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get(`https://mern-blog-platform-ku67.onrender.com/${id}`, {  // Fixed API endpoint
+        const response = await axios.get(`https://blog-platform-5alx.onrender.com/api/posts/${id}`, {  // Fixed API endpoint
           headers: { Authorization: `Bearer ${token}` }
         });
         const post = response.data;
