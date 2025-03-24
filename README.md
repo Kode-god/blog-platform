@@ -33,4 +33,4 @@ Winston logging for backend
 Sentry for frontend error tracking
 Render dashboard for server metrics
 
-The deployment link is  https://blog-platform-754f-9tqczfm6i-kevin-odiwuors-projects.vercel.app
+The deployment link is https://blog-platform-754f.vercel.app/
