@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (email, password) => {
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/login", { email, password });
+      const response = await axios.post("https://mern-blog-platform-ku67.onrender.com", { email, password });
       localStorage.setItem('token', response.data.token);
       axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.token}`;
       setIsAuthenticated(true);
@@ -28,7 +28,7 @@ export const AuthProvider = ({ children }) => {
 
   const register = async (username, email, password) => {
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/register", { username, email, password });
+      const response = await axios.post("https://mern-blog-platform-ku67.onrender.com", { username, email, password });
       localStorage.setItem('token', response.data.token);
       axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.token}`;
       setIsAuthenticated(true);
